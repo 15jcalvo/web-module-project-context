@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react';
+import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 import data from './data';
 
@@ -25,7 +25,7 @@ function App() {
 			{/* Routes */}
 			<Route exact path="/">
 				<ProductContext.Provider value={{products, addItem}}>
-					<Products products={products} addItem={addItem} />
+					<Products />
 				</ProductContext.Provider>
 			</Route>
 
