@@ -12,7 +12,8 @@ function App() {
 	const [cart, setCart] = useState([]);
 
 	const addItem = item => {
-		// add the given item to the cart
+		const newCart = cart.push(item);
+		setCart(newCart);
 	};
 
 	return (
